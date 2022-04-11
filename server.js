@@ -18,6 +18,6 @@ db.once("open", () => console.log("Connected to Database"));
 const columnsRouter = require("./routes/columns");
 app.use("/columns", columnsRouter);
 
-app.listen(PORT, () => {
+app.listen(PORT || 8080, () => {
   console.log(`Server listening on port ${PORT}`);
 });
