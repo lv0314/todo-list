@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -14,5 +13,15 @@
     "express": "^4.17.3",
     "mongoose": "^6.2.10",
     "nodemon": "^2.0.15"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lv0314/todo-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lv0314/todo-list/issues"
+  },
+  "homepage": "https://github.com/lv0314/todo-list#readme",
+  "description": ""
 }
