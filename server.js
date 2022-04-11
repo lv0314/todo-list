@@ -21,6 +21,6 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-app.listen(PORT || 8080, () => {
-  console.log(`Server listening on port ${PORT}`);
+app.listen(process.env.PORT || 8080, () => {
+  console.log(`Server listening on port ${process.env.PORT}`);
 });
