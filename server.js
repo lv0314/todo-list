@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-const { PORT, MONGO_URI } = process.env;
+const { MONGO_URI } = process.env;
 
 app.use(express.json());
 app.use(cors());
@@ -21,6 +21,4 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-app.listen(process.env.PORT || 8080, () => {
-  console.log(`Server listening on port ${process.env.PORT}`);
-});
+app.listen(process.env.PORT || 8080);
